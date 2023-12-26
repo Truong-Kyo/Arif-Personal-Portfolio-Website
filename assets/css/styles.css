@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* common */
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.heading {
+    color: #080415;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 4.125rem; /* 117.857% */
+    letter-spacing: -0.14rem;
+}
+
+.desc {
+    color: #51586a;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem; /* 166.667% */
+}
+
+.btn {
+    width: 170px;
+    height: 62px;
+    background: #5d3bee;
+    color: #fdfdfd;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.875rem; /* 166.667% */
+}
+
+/* Header */
+.header {
+    width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mail-header {
+    display: flex;
+    align-items: center;
+}
+
+.mail-icon {
+    text-align: center;
+    line-height: 46px;
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    border: 1px solid rgb(93 59 238 / 20%);
+    border-radius: 50%;
+}
+
+.icon-content {
+    margin-left: 10px;
+    color: #080415;
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    text-decoration-line: underline;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 8px;
+}
+
+.nav-item {
+    padding: 10px 18px;
+    color: #51586a;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+/* Hero */
+.hero {
+    margin-top: 44px;
+}
+
+.main-hero {
+    display: flex;
+    align-items: center;
+    column-gap: 156px;
+}
+
+.hero__img-inner {
+    width: 514px;
+    height: 705px;
+}
+
+.hero-heading {
+    width: 500px;
+    font-size: 5rem;
+    line-height: 4.75rem; /* 95% */
+    letter-spacing: -0.2rem;
+}
+
+.hero-desc {
+    margin-top: 20px;
+    width: 370px;
+    text-align: left;
+}
+
+.hero-cta {
+    margin-top: 50px;
+}
+
+.works {
+    margin-left: 30px;
+    color: #080415;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.875rem; /* 166.667% */
+    text-decoration-line: underline;
+}
