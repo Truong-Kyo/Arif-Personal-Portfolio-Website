@@ -4,13 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Arif-Personal-Portfolio-Website</title>
-        <!-- Reset css -->
+        <!-- Reset Css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
-        <!-- Grid system 12 column -->
+        <!-- Grid System -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
 
-        <!-- Embet fonts -->
+        <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -18,72 +18,585 @@
             rel="stylesheet"
         />
 
-        <!-- Style css -->
+        <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
         <!-- Header -->
         <header class="header">
-            <div class="mail-header">
-                <div class="mail-icon">
-                    <img src="./assets/icon/icon-header.svg" alt="" />
+            <div class="header__inner">
+                <div class="header-logo">
+                    <div class="logo">
+                        <img src="./assets/icon/icon-header.svg" alt="" />
+                    </div>
+                    <a href="#!" class="header-email"
+                        >truong10082003@gmail.com</a
+                    >
                 </div>
-                <a href="#!" class="icon-content"> truong10082003@gmail.com </a>
+                <img
+                    src="./assets/icon/Memoji Boys 13-24.svg"
+                    alt=""
+                    class="header__emoji"
+                />
+                <ul class="header__nav-list">
+                    <a href="#!" class="header__nav-item">
+                        <li>Projects</li>
+                    </a>
+                    <a href="#!" class="header__nav-item">
+                        <li>Journey</li>
+                    </a>
+                    <a href="#!" class="header__nav-item">
+                        <li>Service</li>
+                    </a>
+                    <a href="#!" class="header__nav-item">
+                        <li>Contact</li>
+                    </a>
+                </ul>
             </div>
 
-            <img src="./assets/icon/Memoji Boys 13-24.svg" alt="" />
+            <!-- Hero -->
+            <div class="hero">
+                <figure class="hero-img">
+                    <img
+                        src="./assets/img/hero-img.png"
+                        alt=""
+                        class="hero-image"
+                    />
 
-            <ul class="nav-list">
-                <a href="#!" class="nav-item">
-                    <li>Projects</li>
-                </a>
-                <a href="#!" class="nav-item">
-                    <li>Journey</li>
-                </a>
-                <a href="#!" class="nav-item">
-                    <li>Service</li>
-                </a>
-                <a href="#!" class="nav-item">
-                    <li>Contact</li>
-                </a>
-            </ul>
+                    <img
+                        src="./assets/img/hero__decor-1.png"
+                        alt=""
+                        class="header-decor"
+                    />
+                </figure>
+                <section class="hero-right">
+                    <h1 class="section-heading hero-heading">
+                        An Interactive Designer
+                    </h1>
+                    <p class="section-desc hero-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                    </p>
+
+                    <div class="hero-cta">
+                        <button class="btn">Book a Call</button>
+                        <a href="#!" class="hero_cta-title">My Works</a>
+                    </div>
+
+                    <div class="hero-contact">
+                        <p class="hero__contact-title">Follow me on:</p>
+                        <div class="hero__contact-list">
+                            <a href="#!" class="hero__contact-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="16"
+                                    width="18"
+                                    viewBox="0 0 576 512"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2 .6-8.7 .6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="hero__contact-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="16"
+                                    width="16"
+                                    viewBox="0 0 512 512"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="hero__contact-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="16"
+                                    width="14"
+                                    viewBox="0 0 448 512"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <img
+                    src="./assets/img/hero__decor-2.png"
+                    alt=""
+                    class="hero__decor-2"
+                />
+            </div>
         </header>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <div class="main-hero">
-                    <div class="hero__img">
-                        <img
-                            class="hero__img-inner"
-                            src="./assets/img/hero-img.png"
-                            alt=""
-                        />
+        <!-- Main -->
+        <main style="height: 10000px">
+            <!-- Clients -->
+            <section class="main">
+                <div class="container">
+                    <div class="clients">
+                        <h2 class="section-heading client-heading">
+                            Meet my recent clients
+                        </h2>
+                        <div class="clients_brain">
+                            <div class="clients__list">
+                                <!-- Clients 1 -->
+                                <div class="clients__brain-item">
+                                    <i class="brain_logo">
+                                        <img
+                                            src="./assets/icon/google.svg"
+                                            alt=""
+                                        />
+                                    </i>
+                                    <a href="#!" class="brain_name">Google</a>
+                                </div>
+
+                                <div class="clients__brain-item">
+                                    <i class="brain_logo">
+                                        <img
+                                            src="./assets/icon/upwork.svg"
+                                            alt=""
+                                        />
+                                    </i>
+                                    <a href="#!" class="brain_name">Up Works</a>
+                                </div>
+                            </div>
+
+                            <!-- Clients 2 -->
+                            <div class="clients__list">
+                                <div class="clients__brain-item">
+                                    <i class="brain_logo">
+                                        <img
+                                            src="./assets/icon/warner.svg"
+                                            alt=""
+                                        />
+                                    </i>
+                                    <a href="#!" class="brain_name"
+                                        >Warner Bros</a
+                                    >
+                                </div>
+
+                                <div class="clients__brain-item">
+                                    <i class="brain_logo">
+                                        <img
+                                            src="./assets/icon/cloud.svg"
+                                            alt=""
+                                        />
+                                    </i>
+                                    <a href="#!" class="brain_name"
+                                        >Creative Cloud</a
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Clients 3 -->
+                            <div class="clients__list">
+                                <div class="clients__brain-item">
+                                    <i class="brain_logo">
+                                        <img
+                                            src="./assets/icon/mailchimp.svg"
+                                            alt=""
+                                        />
+                                    </i>
+                                    <a href="#!" class="brain_name"
+                                        >Mail Chimp</a
+                                    >
+                                </div>
+
+                                <div class="clients__brain-item">
+                                    <i class="brain_logo">
+                                        <img
+                                            src="./assets/icon/woo.svg"
+                                            alt=""
+                                        />
+                                    </i>
+                                    <a href="#!" class="brain_name"
+                                        >Woocommerce</a
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Clients 4 -->
+                            <div class="clients__list">
+                                <div class="clients__brain-item">
+                                    <i class="brain_logo">
+                                        <img
+                                            src="./assets/icon/adobe.svg"
+                                            alt=""
+                                        />
+                                    </i>
+                                    <a href="#!" class="brain_name">Adobe</a>
+                                </div>
+
+                                <div class="clients__brain-item">
+                                    <i class="brain_logo">
+                                        <img
+                                            src="./assets/icon/canva.svg"
+                                            alt=""
+                                        />
+                                    </i>
+                                    <a href="#!" class="brain_name">Canva</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hero-content">
-                        <p class="heading hero-heading">
-                            An Interactive Designer
-                        </p>
-                        <p class="desc hero-desc">
+                </div>
+            </section>
+            <!-- Journey -->
+            <section class="jour">
+                <div class="container">
+                    <section class="jour-top">
+                        <h2 class="section-heading">Specialities</h2>
+                        <p class="section-desc jour-desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
                             turpis.
                         </p>
+                    </section>
 
-                        <div class="hero-cta">
-                            <button class="btn">
-                                <a href="#!">Book a Call</a>
-                            </button>
-
-                            <a href="#!" class="works">My Works</a>
+                    <section class="jour-bot row">
+                        <!-- Jour item 1 -->
+                        <div class="col-4">
+                            <div class="jour-item">
+                                <figure class="jour-image">
+                                    <img
+                                        src="./assets/img/jour_icon-1.png"
+                                        alt=""
+                                        class="jour-img"
+                                    />
+                                </figure>
+                                <h3 class="jour-heading">Product design</h3>
+                                <p class="section-desc jour-title">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
                         </div>
 
-                        <div class="follow">
-                            <p class="follow-title">Follow me on:</p>
+                        <!-- Jour item 2 -->
+                        <div class="col-4">
+                            <div class="jour-item">
+                                <figure class="jour-image">
+                                    <img
+                                        src="./assets/img/jour_icon-2.png"
+                                        alt=""
+                                        class="jour-img"
+                                    />
+                                </figure>
+                                <h3 class="jour-heading">UI/UX Design</h3>
+                                <p class="section-desc jour-title">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Jour item 3 -->
+                        <div class="col-4">
+                            <div class="jour-item">
+                                <figure class="jour-image">
+                                    <img
+                                        src="./assets/img/jour_icon-3.png"
+                                        alt=""
+                                        class="jour-img"
+                                    />
+                                </figure>
+                                <h3 class="jour-heading">Interactive design</h3>
+                                <p class="section-desc jour-title">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!-- Projects -->
+            <div class="projects">
+                <div class="container">
+                    <div class="project__inner">
+                        <section class="project-top">
+                            <h2 class="section_heading-2 project-heading">
+                                Take a look at <br />
+                                my recent projects
+                            </h2>
+                            <p class="section-desc project-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </section>
+                        <div class="project-bot row">
+                            <!-- Project item 1 -->
+                            <div class="project-item col-6">
+                                <div class="project__item-inner">
+                                    <section class="project__item-title">
+                                        <h3 class="section_heading-3">
+                                            Wally Website
+                                        </h3>
+                                        <p
+                                            class="section-desc project__item-desc"
+                                        >
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-cta"
+                                            >Case Study</a
+                                        >
+                                    </section>
+
+                                    <figure class="project-image">
+                                        <img
+                                            src="./assets/img/project-1.jpg"
+                                            alt=""
+                                            class="project-img"
+                                        />
+
+                                        <img
+                                            src="./assets/img/project-decor.png"
+                                            alt=""
+                                            class="project-decor"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Project item 2 -->
+                            <div class="project-item col-6">
+                                <div class="project__item-inner">
+                                    <section class="project__item-title">
+                                        <h3 class="section_heading-3">
+                                            Banking App
+                                        </h3>
+                                        <p
+                                            class="section-desc project__item-desc"
+                                        >
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-cta"
+                                            >Case Study</a
+                                        >
+                                    </section>
+
+                                    <figure class="project-image">
+                                        <img
+                                            src="./assets/img/project-2.jpg"
+                                            alt=""
+                                            class="project-img"
+                                        />
+
+                                        <img
+                                            src="./assets/img/project-decor.png"
+                                            alt=""
+                                            class="project-decor"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Project item 3 -->
+                            <div class="project-item col-6">
+                                <div class="project__item-inner">
+                                    <section class="project__item-title">
+                                        <h3 class="section_heading-3">
+                                            Web App
+                                        </h3>
+                                        <p
+                                            class="section-desc project__item-desc"
+                                        >
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-cta"
+                                            >Case Study</a
+                                        >
+                                    </section>
+
+                                    <figure class="project-image">
+                                        <img
+                                            src="./assets/img/project-3.jpg"
+                                            alt=""
+                                            class="project-img"
+                                        />
+
+                                        <img
+                                            src="./assets/img/project-decor.png"
+                                            alt=""
+                                            class="project-decor"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Project item 4 -->
+                            <div class="project-item col-6">
+                                <div class="project__item-inner">
+                                    <section class="project__item-title">
+                                        <h3 class="section_heading-3">
+                                            Oculus Website
+                                        </h3>
+                                        <p
+                                            class="section-desc project__item-desc"
+                                        >
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-cta"
+                                            >Case Study</a
+                                        >
+                                    </section>
+
+                                    <figure class="project-image">
+                                        <img
+                                            src="./assets/img/project-4.jpg"
+                                            alt=""
+                                            class="project-img"
+                                        />
+
+                                        <img
+                                            src="./assets/img/project-decor.png"
+                                            alt=""
+                                            class="project-decor"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn project-btn">All Projects</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Introduce -->
+            <div class="intro">
+                <div class="container">
+                    <div class="intro__inner">
+                        <!-- Introduce top -->
+                        <section class="intro-top">
+                            <div class="intro_first">
+                                <p class="intro-title">Hey,,,,It’s Arif</p>
+                                <img
+                                    src="./assets/icon/intro-icon.svg"
+                                    alt=""
+                                    class="intro-icon"
+                                />
+                            </div>
+                            <h2 class="section_heading-2 intro-heading">
+                                Interactive Designer
+                            </h2>
+                            <p class="section-desc intro-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </section>
+
+                        <div class="intro__result">
+                            <!-- item 1  -->
+                            <div class="intro__result-item">
+                                <h3
+                                    class="intro__result-heading section_heading-2"
+                                >
+                                    08+
+                                </h3>
+                                <p class="section-desc">Years Experience</p>
+                            </div>
+
+                            <!-- item 2  -->
+                            <div class="intro__result-item">
+                                <h3
+                                    class="intro__result-heading section_heading-2"
+                                >
+                                    21+
+                                </h3>
+                                <p class="section-desc">Features & Awards</p>
+                            </div>
+
+                            <!-- item 3  -->
+                            <div class="intro__result-item">
+                                <h3
+                                    class="intro__result-heading section_heading-2"
+                                >
+                                    97%
+                                </h3>
+                                <p class="section-desc">Clients Rating</p>
+                            </div>
+                        </div>
+
+                        <div class="intro__video-block">
+                            <img
+                                src="./assets/img/intro-video.jpg"
+                                alt=""
+                                class="intro-video"
+                            />
+
+                            <!-- Icon play -->
+                            <svg
+                                class="intro__icon-play"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="111"
+                                height="111"
+                                viewBox="0 0 111 111"
+                                fill="none"
+                            >
+                                <g filter="url(#filter0_b_1_289)">
+                                    <circle
+                                        cx="55.5"
+                                        cy="55.5"
+                                        r="55.5"
+                                        fill="white"
+                                        fill-opacity="0.7"
+                                    />
+                                </g>
+                                <path
+                                    d="M64.4462 56.6965C64.3614 56.7835 64.0414 57.1555 63.7433 57.4615C61.9956 59.386 57.4364 62.536 55.0502 63.4975C54.6878 63.652 53.7716 63.979 53.282 64C52.813 64 52.3658 63.892 51.9391 63.673C51.4072 63.367 50.9805 62.8855 50.7467 62.317C50.5962 61.9225 50.3624 60.742 50.3624 60.721C50.1286 59.4295 50 57.331 50 55.012C50 52.8025 50.1286 50.7895 50.32 49.4785C50.3419 49.4575 50.5757 47.9905 50.8315 47.488C51.3005 46.57 52.2168 46 53.1973 46H53.282C53.9206 46.0225 55.2635 46.5925 55.2635 46.6135C57.5212 47.5765 61.9752 50.572 63.7652 52.5625C63.7652 52.5625 64.2694 53.074 64.4886 53.3935C64.8305 53.8525 65 54.421 65 54.9895C65 55.624 64.8086 56.215 64.4462 56.6965Z"
+                                    fill="#5D3BEE"
+                                />
+                                <defs>
+                                    <filter
+                                        id="filter0_b_1_289"
+                                        x="-24"
+                                        y="-24"
+                                        width="159"
+                                        height="159"
+                                        filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB"
+                                    >
+                                        <feFlood
+                                            flood-opacity="0"
+                                            result="BackgroundImageFix"
+                                        />
+                                        <feGaussianBlur
+                                            in="BackgroundImageFix"
+                                            stdDeviation="12"
+                                        />
+                                        <feComposite
+                                            in2="SourceAlpha"
+                                            operator="in"
+                                            result="effect1_backgroundBlur_1_289"
+                                        />
+                                        <feBlend
+                                            mode="normal"
+                                            in="SourceGraphic"
+                                            in2="effect1_backgroundBlur_1_289"
+                                            result="shape"
+                                        />
+                                    </filter>
+                                </defs>
+                            </svg>
+
+                            <div class="sub-video">
+                                <p class="sub__video-title">Intro Video</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </main>
     </body>
 </html>
